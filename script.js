@@ -107,42 +107,12 @@
       });
     }
 
-    // Gallery vertical parallax effect
+        // Gallery vertical parallax effect
     const gallerySection = document.getElementById('gallery-vertical');
-    const colLeft = document.querySelector('.col-left');
-    const colCenter = document.querySelector('.col-center');
-    const colRight = document.querySelector('.col-right');
 
-    if (gallerySection && colLeft && colCenter && colRight) {
-      let targetY = 0;
-      let currentY = 0;
-      const ease = 0.08;
-
-      window.addEventListener('scroll', () => {
-        const rect = gallerySection.getBoundingClientRect();
-        const winHeight = window.innerHeight;
-
-        // If the gallery section is visible in the viewport
-        if (rect.top < winHeight && rect.bottom > 0) {
-          // Calculate offset relative to viewport center
-          const sectionCenter = rect.top + rect.height / 2;
-          const viewportCenter = winHeight / 2;
-          
-          // Target vertical translation offset
-          targetY = (sectionCenter - viewportCenter) * 0.12;
-        }
-      });
-
+    if (gallerySection) {
       const updateParallax = () => {
         if (window.innerWidth > 768) {
-          // Smooth translation using lerp
-          currentY += (targetY - currentY) * ease;
-
-          // Shift left/right columns and center column in opposite directions
-          colLeft.style.transform = `translate3d(0, ${currentY}px, 0)`;
-          colRight.style.transform = `translate3d(0, ${currentY}px, 0)`;
-          colCenter.style.transform = `translate3d(0, ${-currentY}px, 0)`;
-
           // Subtle internal image parallax translation inside the wrapper to add extra depth
           const items = gallerySection.querySelectorAll('.gallery-item');
           items.forEach(item => {
@@ -154,15 +124,12 @@
               const img = item.querySelector('img');
               if (img) {
                 // Translate image vertically slightly in opposite direction of scroll
-                img.style.transform = `scale(1.15) translate3d(0, ${relativePos * -20}px, 0)`;
+                img.style.transform = `scale(1.15) translate3d(0, ${relativePos * -25}px, 0)`;
               }
             }
           });
         } else {
           // Clear styles on mobile devices
-          colLeft.style.transform = '';
-          colCenter.style.transform = '';
-          colRight.style.transform = '';
           const images = gallerySection.querySelectorAll('.gallery-item img');
           images.forEach(img => {
             img.style.transform = '';
