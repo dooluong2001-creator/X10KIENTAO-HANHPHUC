@@ -2292,70 +2292,85 @@ Text Domain: x10-theme
     @media (max-width: 768px) {
       nav {
         display: flex !important;
-        flex-direction: column !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
         align-items: center !important;
-        gap: 1rem !important;
-        padding: 1.25rem 1rem !important;
+        justify-content: center !important;
+        gap: 0 !important;
+        padding: 0.5rem 0.25rem !important;
+        height: auto !important;
+        overflow: visible !important;
       }
 
       .nav-section {
-        width: 100% !important;
         display: flex !important;
-        flex-direction: column !important;
+        flex-direction: row !important;
         align-items: center !important;
-        padding: 0 !important;
+        justify-content: center !important;
+        padding: 0 0.35rem !important;
+        position: relative !important;
+        width: auto !important;
+        max-width: none !important;
+        flex: none !important;
       }
 
       .nav-section:not(:last-child)::after {
-        display: none !important;
+        content: '' !important;
+        position: absolute !important;
+        right: 0 !important;
+        top: 20% !important;
+        height: 60% !important;
+        width: 1px !important;
+        background: rgba(15, 61, 38, 0.12) !important;
+        display: block !important;
       }
 
       .nav-section .section-label {
-        font-size: 0.58rem !important;
-        margin-bottom: 6px !important;
+        display: none !important;
       }
 
       .logos-group {
         display: flex !important;
         flex-direction: row !important;
-        flex-wrap: wrap !important;
+        flex-wrap: nowrap !important;
         justify-content: center !important;
         align-items: center !important;
-        gap: 1.5rem !important;
-        width: 100% !important;
+        gap: 0.35rem !important;
+        width: auto !important;
         height: auto !important;
+        margin-top: 0 !important;
       }
 
       .nav-logo-img {
-        height: 32px !important;
+        height: 20px !important;
       }
 
       .logo-svf {
-        height: 32px !important;
+        height: 20px !important;
       }
 
       .logo-lanhdao {
-        height: 34px !important;
+        height: 22px !important;
       }
 
       .logo-bitis {
-        height: 30px !important;
+        height: 18px !important;
       }
 
       .logo-hongbang {
-        height: 28px !important;
+        height: 16px !important;
       }
 
       .logo-jci {
-        height: 32px !important;
+        height: 20px !important;
       }
 
       .logo-caynen {
-        height: 42px !important;
+        height: 26px !important;
       }
 
       .logo-ceo {
-        height: 30px !important;
+        height: 18px !important;
       }
     }
 
