@@ -2288,6 +2288,77 @@ Text Domain: x10-theme
       }
     }
 
+    /* Mobile Responsive styling for Header Nav Partners */
+    @media (max-width: 768px) {
+      nav {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 1rem !important;
+        padding: 1.25rem 1rem !important;
+      }
+
+      .nav-section {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        padding: 0 !important;
+      }
+
+      .nav-section:not(:last-child)::after {
+        display: none !important;
+      }
+
+      .nav-section .section-label {
+        font-size: 0.58rem !important;
+        margin-bottom: 6px !important;
+      }
+
+      .logos-group {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 1.5rem !important;
+        width: 100% !important;
+        height: auto !important;
+      }
+
+      .nav-logo-img {
+        height: 32px !important;
+      }
+
+      .logo-svf {
+        height: 32px !important;
+      }
+
+      .logo-lanhdao {
+        height: 34px !important;
+      }
+
+      .logo-bitis {
+        height: 30px !important;
+      }
+
+      .logo-hongbang {
+        height: 28px !important;
+      }
+
+      .logo-jci {
+        height: 32px !important;
+      }
+
+      .logo-caynen {
+        height: 42px !important;
+      }
+
+      .logo-ceo {
+        height: 30px !important;
+      }
+    }
+
     /* ─── PRELOADER STYLES ─── */
     body.loading {
       overflow: hidden !important;

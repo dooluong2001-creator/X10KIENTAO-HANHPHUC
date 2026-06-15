@@ -2182,23 +2182,25 @@ Text Domain: x10-theme
     /* ─── RESPONSIVE ─── */
     @media (max-width: 1024px) {
       nav {
-        padding: 0.5rem 1rem !important;
-        flex-direction: row !important;
-        flex-wrap: wrap !important;
-        gap: 0.5rem !important;
-        align-items: center !important;
-        justify-content: center !important;
+        position: relative !important;
+        padding: 1.25rem 0.5rem !important;
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1.25rem 0.75rem !important;
         height: auto !important;
         overflow: visible !important;
+        background: rgba(250, 248, 245, 0.96) !important;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05) !important;
+        border-bottom: 1px solid rgba(15, 61, 38, 0.1) !important;
       }
 
       .nav-section {
         display: flex !important;
-        flex-direction: row !important;
-        flex-wrap: wrap !important;
-        justify-content: center !important;
-        width: auto !important;
-        padding: 0 6px !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        width: 100% !important;
+        padding: 0 4px !important;
         max-width: none !important;
         flex: none !important;
       }
@@ -2208,7 +2210,15 @@ Text Domain: x10-theme
       }
 
       .nav-section .section-label {
-        display: none !important;
+        display: block !important;
+        font-size: 0.58rem !important;
+        font-weight: 700 !important;
+        letter-spacing: 0.08em !important;
+        text-transform: uppercase !important;
+        color: var(--color-primary-green) !important;
+        opacity: 0.85;
+        text-align: center;
+        margin-bottom: 6px !important;
       }
 
       .logos-group {
@@ -2216,10 +2226,10 @@ Text Domain: x10-theme
         flex-wrap: wrap !important;
         justify-content: center !important;
         align-items: center !important;
-        gap: 0.5rem !important;
+        gap: 0.75rem !important;
         height: auto !important;
         margin-top: 0 !important;
-        width: auto !important;
+        width: 100% !important;
       }
 
       .nav-logo-img {
@@ -2227,32 +2237,32 @@ Text Domain: x10-theme
       }
 
       .logo-svf {
-        height: 26px !important;
-      }
-
-      .logo-lanhdao {
         height: 28px !important;
       }
 
+      .logo-lanhdao {
+        height: 30px !important;
+      }
+
       .logo-bitis {
-        height: 24px !important;
-      }
-
-      .logo-hongbang {
-        height: 22px !important;
-      }
-
-      .logo-jci {
         height: 26px !important;
       }
 
+      .logo-hongbang {
+        height: 24px !important;
+      }
+
+      .logo-jci {
+        height: 28px !important;
+      }
+
       .logo-caynen {
-        height: 34px !important;
+        height: 38px !important;
         margin: 0 !important;
       }
 
       .logo-ceo {
-        height: 22px !important;
+        height: 26px !important;
       }
 
       .about-stats {
@@ -2285,6 +2295,77 @@ Text Domain: x10-theme
       .sticky-cta a {
         padding: .65rem 1.25rem;
         font-size: .8rem;
+      }
+    }
+
+    /* Mobile Responsive styling for Header Nav Partners */
+    @media (max-width: 768px) {
+      nav {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 1rem !important;
+        padding: 1.25rem 1rem !important;
+      }
+
+      .nav-section {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        padding: 0 !important;
+      }
+
+      .nav-section:not(:last-child)::after {
+        display: none !important;
+      }
+
+      .nav-section .section-label {
+        font-size: 0.58rem !important;
+        margin-bottom: 6px !important;
+      }
+
+      .logos-group {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 1.5rem !important;
+        width: 100% !important;
+        height: auto !important;
+      }
+
+      .nav-logo-img {
+        height: 32px !important;
+      }
+
+      .logo-svf {
+        height: 32px !important;
+      }
+
+      .logo-lanhdao {
+        height: 34px !important;
+      }
+
+      .logo-bitis {
+        height: 30px !important;
+      }
+
+      .logo-hongbang {
+        height: 28px !important;
+      }
+
+      .logo-jci {
+        height: 32px !important;
+      }
+
+      .logo-caynen {
+        height: 42px !important;
+      }
+
+      .logo-ceo {
+        height: 30px !important;
       }
     }
 
