@@ -81,7 +81,7 @@
       btn.style.color = '#fff';
       btn.disabled = true;
       setTimeout(() => {
-        window.location.href = 'https://KAIpany.com/YTP-DaNang';
+        window.location.href = 'https://KAIpany.com/YTP-X10';
       }, 2000);
     }
 

@@ -10,7 +10,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&family=Playfair+Display:wght@700;900&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css?v=1.0.5">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css?v=1.0.6">
 </head>
 
 <body class="loading">
@@ -32,7 +32,7 @@
 
   <!-- STICKY CTA -->
   <div class="sticky-cta">
-    <a href="https://KAIpany.com/YTP-DaNang" target="_blank">
+    <a href="https://KAIpany.com/YTP-X10" target="_blank">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
       </svg>
@@ -82,7 +82,7 @@
     </div>
 
     <div class="hero-cta">
-      <a href="https://KAIpany.com/YTP-DaNang" target="_blank" class="btn-primary">Đăng ký Early Bird – 350.000đ</a>
+      <a href="https://KAIpany.com/YTP-X10" target="_blank" class="btn-primary">Đăng ký Early Bird – 350.000đ</a>
       <a href="#about" class="btn-outline">Tìm hiểu thêm</a>
     </div>
 
@@ -485,7 +485,7 @@
           <li>Truy cập không gian networking</li>
           <li>Miễn phí The Heritage Show </li>
         </ul>
-        <a href="https://KAIpany.com/YTP-DaNang" target="_blank" class="btn-primary btn-full">Đăng ký ngay</a>
+        <a href="https://KAIpany.com/YTP-X10" target="_blank" class="btn-primary btn-full">Đăng ký ngay</a>
       </div>
 
       <div class="price-card reveal">
@@ -499,7 +499,7 @@
           <li>Truy cập không gian networking</li>
           <li>Miễn phí The Heritage Show </li>
         </ul>
-        <a href="https://KAIpany.com/YTP-DaNang" target="_blank" class="btn-outline btn-full"
+        <a href="https://KAIpany.com/YTP-X10" target="_blank" class="btn-outline btn-full"
           style="display:block;text-align:center;text-decoration:none">Đăng ký</a>
       </div>
     </div>
@@ -519,7 +519,7 @@
 
       <div class="reveal" style="text-align:center;margin-bottom:3rem">
         <button type="button" class="btn-register-cta"
-          onclick="window.open('https://KAIpany.com/YTP-DaNang', '_blank')">
+          onclick="window.open('https://KAIpany.com/YTP-X10', '_blank')">
           Xác nhận đăng ký →
         </button>
       </div>
